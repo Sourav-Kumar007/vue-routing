@@ -3,7 +3,13 @@ import { RouterLink } from 'vue-router';
 </script>
 <template> 
 <div> 
-    <RouterLink to="/"> Home </RouterLink> 
-    <RouterLink to="/about"> About </RouterLink>
+    <RouterLink active-class="active" to="/"> Home </RouterLink> 
+    <RouterLink active-class="active" to="/about"> About </RouterLink>
 </div>
-</template>
+</template> 
+<style scoped> 
+    .active{
+        font-weight : 900;
+        color : red;
+    }
+  </style>
